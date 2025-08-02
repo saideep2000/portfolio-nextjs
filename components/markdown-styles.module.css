@@ -1,0 +1,84 @@
+.markdownRendered h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+  }
+  
+  .markdownRendered h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+  }
+  
+  .markdownRendered h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .markdownRendered h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+  }
+  
+  .markdownRendered h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+  }
+  
+  .markdownRendered h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+  }
+  
+  .markdownRendered p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .markdownRendered ul, .markdownRendered ol {
+    padding-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .markdownRendered li {
+    margin-bottom: 0.5em;
+  }
+  
+  .markdownRendered a {
+    color: #0000EE;
+    text-decoration: underline;
+  }
+  
+  .markdownRendered code {
+    background-color: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+  }
+  
+  .markdownRendered pre {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  .markdownRendered blockquote {
+    border-left: 4px solid #ccc;
+    margin: 1em 0;
+    padding-left: 1em;
+    font-style: italic;
+  }
+  
+  

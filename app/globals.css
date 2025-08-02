@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #000000; /* Pure black background for terminal look */
+    --foreground: #00ff00; /* Bright green text for terminal style */
+
+    --card: #001a00; /* Dark greenish black for subtle depth */
+    --card-foreground: #00ff00; /* Bright green text for cards */
+
+    --popover: #001a00; /* Similar to card for consistency */
+    --popover-foreground: #00ff00;
+
+    --primary: #00ff00; /* Terminal green for primary elements */
+    --primary-foreground: #000000; /* Black foreground for contrast with green */
+
+    --secondary: #003300; /* Dark green for secondary elements */
+    --secondary-foreground: #00ff00;
+
+    --muted: #001a00; /* Very dark green for muted elements */
+    --muted-foreground: #009900; /* Dimmer green for subtlety */
+
+    --accent: #00ff00; /* Terminal green accent */
+    --accent-foreground: #000000; /* Black foreground for contrast */
+
+    --destructive: #ff0000; /* Bright red for destructive elements */
+    --destructive-foreground: #000000;
+
+    --border: #002200; /* Subtle green border */
+    --input: #001a00; /* Dark input field */
+    --ring: #00ff00; /* Green ring for focus indicators */
+
+    --radius: 0.25rem; /* Slightly sharper corners for a terminal feel */
+}
+.light {
+  --background: #ffffff;
+  --foreground: #000000;
+
+  --card: #f5f5f5;
+  --card-foreground: #000000;
+
+  --popover: #f9f9f9;
+  --popover-foreground: #000000;
+
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+
+  --secondary: #dcdcdc;
+  --secondary-foreground: #000000;
+
+  --muted: #dcdcdc;
+  --muted-foreground: #666666;
+
+  --accent: #ffcc00;
+  --accent-foreground: #333333;
+
+  --destructive: #e63946;
+  --destructive-foreground: #ffffff;
+
+  --border: #cccccc;
+  --input: #f0f0f0;
+  --ring: #0066cc;
+
+  --radius: 0.5rem;
+}
+
+
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  }
+  button {
+    @apply active:outline-none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .floating-navbar {
+    background-color: rgba(var(--background), 0.95);
+  }
+
+  @supports (backdrop-filter: blur(4px)) {
+    .floating-navbar {
+      background-color: rgba(var(--background), 0.8);
+      backdrop-filter: blur(4px);
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <!-- Background -->
+  <rect width="300" height="80" fill="white" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:black;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:black;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Text with gradient fill -->
+  <text x="50" y="55" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="url(#grad)">
+    <tspan>jayantha</tspan>
+    <tspan font-family="monospace" font-size="36">.py</tspan>
+  </text>
+</svg>
