@@ -29,7 +29,7 @@ This project is a responsive, single-page application that showcases my skills, 
 
 1. Clone the repository:
 
-`git clone https://github.com/jaynanduri/portfolio-website`
+`git clone https://github.com/saideep2000/portfolio-nextjs`
 
 2. Install dependencies:
 
@@ -51,7 +51,3 @@ To customize the content of the portfolio:
 ## Deployment
 
 This project can be easily deployed on Vercel or any other platform that supports Next.js applications.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
