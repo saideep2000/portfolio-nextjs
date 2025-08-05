@@ -11,7 +11,7 @@ import NortheasternIcon from '@/components/icons/NortheasternIcon';
 import { internshipWorkSWAPT, workAtINTUIT, workExpAtNEU } from './jobDesc';
 import { RiNextjsFill } from 'react-icons/ri';
 import SwaptLogo from '@/components/icons/SwaptLogo';
-import IntuitLogo from '@/components/icons/IntuitIcon';
+import AccentureIcon from '@/components/icons/AccentureIcon';
 
 
 export interface Skill {
@@ -79,7 +79,7 @@ export const workExperiences: WorkExperience[] = [
     logo: NortheasternIcon
   },
   {
-    company: "Intuit",
+    company: "Accenture",
     position: "Software Engineer",
     duration: "May 2021 - Dec 2022 (1 yr 8 mos)",
     year: "2021-2022",
@@ -95,7 +95,7 @@ export const workExperiences: WorkExperience[] = [
       { name: "Splunk", icon: FaWatchmanMonitoring },
       
     ],
-    logo: IntuitLogo
+    logo: AccentureIcon,
   },
 ];
 

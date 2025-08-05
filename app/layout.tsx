@@ -48,6 +48,7 @@ export default function RootLayout({
               gtag('js', new Date());
               gtag('config', 'G-L2NWSJR474', {
                 page_path: window.location.pathname,
+                debug_mode: true      // ← enable DebugView
               });
             `,
           }}
@@ -81,7 +82,6 @@ function ScriptForSectionTiming() {
       dangerouslySetInnerHTML={{
         __html: `
           const sections = ['about', 'projects', 'work', 'education'];
-          const sectionTimers = {};
           let currentSection = null;
           let sectionStartTime = Date.now();
 
@@ -114,9 +114,12 @@ function ScriptForSectionTiming() {
             }
           }
 
-          window.addEventListener('scroll', () => {
+          // Kick off timing (and send the first section_view if they scroll)
+          window.addEventListener('load', () => {
             trackTime();
           });
+
+          window.addEventListener('scroll', trackTime);
 
           window.addEventListener('beforeunload', () => {
             const now = Date.now();
