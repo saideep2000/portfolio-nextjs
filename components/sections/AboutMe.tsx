@@ -32,7 +32,7 @@ const AboutMe: React.FC = () => {
             <p>
               <FaCode className="inline-block mr-2" /> 
 
-              With 2+ years of hands-on experience across industries — from fintech at Intuit to fast-paced startups like Swapt — I&apos;ve built everything from QR code microservices to multithreaded financial integrations. I specialize in Java, Spring Boot, Python, React, Kubernetes, and CI/CD pipelines, and I&apos;m deeply invested in writing performant, maintainable, and testable software.            </p>
+              With 2+ years of hands-on experience across industries — from fintech at Accenture to fast-paced startups like Swapt — I&apos;ve built everything from QR code microservices to multithreaded financial integrations. I specialize in Java, Spring Boot, Python, React, Kubernetes, and CI/CD pipelines, and I&apos;m deeply invested in writing performant, maintainable, and testable software.            </p>
             <p>
               When I&apos;m not crunching numbers or coding, you might find me:
             </p>
