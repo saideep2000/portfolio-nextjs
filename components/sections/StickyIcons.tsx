@@ -17,7 +17,7 @@ const StickyIcons: React.FC = () => {
 
   const socialLinks: IconLinkProps[] = [
     { icon: FaGithub, href: 'https://github.com/saideep2000' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/saideep-samineni-ab2170384/' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/saideep-samineni/'
     { icon: FaInstagram, href: 'https://www.instagram.com/saideep_chowdary_/' },
     { icon: LeetcodeIcon, href: 'https://leetcode.com/u/saideepsamineni/'}
   ];
