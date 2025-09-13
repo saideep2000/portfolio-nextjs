@@ -12,6 +12,7 @@ import { internshipWorkSWAPT, workAtINTUIT, workExpAtNEU } from './jobDesc';
 import { RiNextjsFill } from 'react-icons/ri';
 import SwaptLogo from '@/components/icons/SwaptLogo';
 import AccentureIcon from '@/components/icons/AccentureIcon';
+import ShiashIcon from '@/components/icons/ShiashIcon';
 
 
 export interface Skill {
@@ -78,8 +79,28 @@ export const workExperiences: WorkExperience[] = [
     ],
     logo: NortheasternIcon
   },
+  // {
+  //   company: "Accenture",
+  //   position: "Software Engineer",
+  //   duration: "May 2021 - Dec 2022 (1 yr 8 mos)",
+  //   year: "2021-2022",
+  //   description: convertMarkDown(workAtINTUIT),
+  //   skills: [
+  //     { name: "Java", icon: FaJava },
+  //     { name: "React", icon: FaReact },
+  //     { name: "Python", icon: FaPython },
+  //     { name: "PostgreSQL", icon: SiPostgresql},
+  //     // { name: "AWS", icon: FaAws},
+  //     { name: "Docker", icon: SiDocker},
+  //     { name: "Jenkins", icon: FaJenkins },
+  //     // { name: "Splunk", icon: FaWatchmanMonitoring },
+      
+  //   ],
+  //   logo: AccentureIcon,
+  // },
+
   {
-    company: "Accenture",
+    company: "Shaish",
     position: "Software Engineer",
     duration: "May 2021 - Dec 2022 (1 yr 8 mos)",
     year: "2021-2022",
@@ -95,7 +116,7 @@ export const workExperiences: WorkExperience[] = [
       // { name: "Splunk", icon: FaWatchmanMonitoring },
       
     ],
-    logo: AccentureIcon,
-  },
+    logo: ShiashIcon,
+  }
 ];
 
