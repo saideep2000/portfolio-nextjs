@@ -18,10 +18,10 @@ export const educations: EducationField[] = [
         logo: NortheasternIcon
     },
     {
-        university: "Vellore Institution Of Technology, India",
-        degree: "Bachelor of Technology, Computer Science and Engineering",
-        duration: "Aug 2017 - Sep 2020",
-        year: "2017-2021",
+        university: "VIT-AP University, India",
+        degree: "Master of Technology in Software Engineering (5-Year Integrated)",
+        duration: "Aug 2017 - May 2022",
+        year: "2017-2022",
         logo: VitIcon
     },
 ];
